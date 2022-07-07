@@ -15,10 +15,10 @@ public class DayServiceImpl implements DayService {
     private final String COUNTRY = "DE";
 
     @Override
-    public Day getDay() {
-        Day date = new Day();
+    public Day getDay(Day date) {
         Locale locale = new Locale(LANGUAGE, COUNTRY);
-        date.setDate(DayOfWeek.from(LocalDate.now()).getDisplayName(TextStyle.FULL, locale));
+        date.setDate(DayOfWeek.from(LocalDate.now())
+                     .getDisplayName(TextStyle.FULL, locale));
 
         return date;
     }
