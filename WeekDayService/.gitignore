@@ -1,0 +1,7 @@
+/.mvn/
+/src/test/
+/target/
+/HELP.md
+/WeekDayService.iml
+/src/main/resources/
+/.mvn/wrapper/
